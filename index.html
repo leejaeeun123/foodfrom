@@ -172,6 +172,28 @@ blockquote .from{
 .postmark .t{font-size:8px;letter-spacing:.16em}
 .postmark .m{font-family:"Instrument Serif",Georgia,serif;font-size:21px;letter-spacing:.02em}
 
+/* ---------- gallery ---------- */
+.gal{display:grid;gap:14px;margin:0 0 22px}
+.gal.three{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.gal.two{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.gal figure{margin:0;border:1px solid var(--line);background:var(--surface)}
+.gal img{display:block;width:100%;height:auto}
+.gal figcaption{
+  padding:9px 12px;font-size:12px;color:var(--muted);
+  border-top:1px solid var(--line);
+}
+.gal.wide{grid-template-columns:1fr}
+
+.spec{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}
+.spec b{
+  font-weight:500;font-size:12px;border:1px solid var(--line);
+  background:var(--surface);padding:4px 11px;color:var(--muted);
+}
+.spec b em{font-style:normal;color:var(--accent);font-weight:700}
+
+.ok{color:#2E6B3E;font-weight:700}
+.no{color:var(--accent);font-weight:700}
+
 .todo{list-style:none;padding:0;font-size:14px}
 .todo li{padding-left:26px;position:relative;margin-bottom:8px}
 .todo li::before{
@@ -560,11 +582,16 @@ footer .sig{font-family:"Instrument Serif",Georgia,serif;font-size:22px;color:va
   <div class="tblwrap"><table>
     <thead><tr><th>유형</th><th>제품</th><th>포장재</th><th>스티커</th></tr></thead>
     <tbody>
-      <tr><td>냉동 파우치</td><td>김치찜, 곰탕, 뼈없족, 아는떡볶이</td><td>백색 무지 파우치 (폴리에틸렌 내면)</td><td>전면 중앙 · 컬러</td></tr>
-      <tr><td>진공 투명</td><td>편육</td><td>투명 진공 파우치</td><td>상단 · <strong>흑백 영양정보만</strong></td></tr>
+      <tr><td>냉동 파우치</td><td>김치찜, 곰탕, 뼈없족, 아는떡볶이</td><td>백색 무지 파우치 (폴리에틸렌 내면)</td><td>전면 중앙 · 세로형 컬러</td></tr>
+      <tr><td>진공 투명</td><td>편육</td><td>투명 진공 파우치</td><td>상단 · 가로형 컬러</td></tr>
     </tbody>
   </table></div>
   <p>배송은 <strong>아이스박스 + 아이스팩 동봉 택배</strong>.</p>
+
+  <div class="gal two">
+    <figure><img src="brand/assets/package-pouch.jpg" alt="냉동 파우치 포장 실물"><figcaption>냉동 파우치 — 백색 무지 + 스티커 1장</figcaption></figure>
+    <figure><img src="brand/assets/package-pyeonyuk.jpg" alt="편육 진공 포장 실물"><figcaption>편육 — 투명 진공 + 상단 스티커</figcaption></figure>
+  </div>
 
   <h4>스티커 템플릿 (냉동 파우치)</h4>
   <p>현행 템플릿은 이미 브랜드 컬러 위에서 작동하고 있습니다. 구조를 규격으로 고정합니다.</p>
@@ -584,23 +611,55 @@ footer .sig{font-family:"Instrument Serif",Georgia,serif;font-size:22px;color:va
     </tbody>
   </table></div>
 
-  <h4>규격 불일치 — 확인 필요</h4>
+  <h4>현행 시안</h4>
+  <div class="gal three">
+    <figure><img src="brand/assets/sticker-gomtang.jpg" alt="아롱아롱 고기곰탕 스티커"><figcaption>아롱아롱 고기곰탕 · 1240 × 1476</figcaption></figure>
+    <figure><img src="brand/assets/sticker-ppyeoeopjok.jpg" alt="뼈없족 스티커"><figcaption>순살족발 뼈없족 · 620 × 738</figcaption></figure>
+    <figure><img src="brand/assets/sticker-tteokbokki.jpg" alt="아는떡볶이 스티커 v3"><figcaption>아는떡볶이 v3 · 1299 × 1772</figcaption></figure>
+  </div>
+
+  <h4>규격</h4>
   <div class="tblwrap"><table>
     <thead><tr><th>제품</th><th>원본 크기</th><th>비율</th></tr></thead>
     <tbody>
       <tr><td>곰탕</td><td>1240 × 1476</td><td>1 : 1.19</td></tr>
       <tr><td>뼈없족</td><td>620 × 738</td><td>1 : 1.19</td></tr>
-      <tr><td><strong>아는떡볶이 (v3)</strong></td><td>1299 × 1772</td><td><strong>1 : 1.36</strong></td></tr>
+      <tr><td>아는떡볶이 (v3)</td><td>1299 × 1772</td><td>1 : 1.36</td></tr>
     </tbody>
   </table></div>
-  <p>떡볶이만 세로로 길어 <strong>레이아웃 리듬이 어긋납니다</strong>.
-  파우치 규격 차이 때문이라면 그대로 두되, 아니라면 <code>1 : 1.19</code>로 통일합니다.</p>
+  <p><strong>아는떡볶이는 파우치 크기가 달라 비율을 다르게 잡은 것으로, 의도된 차이입니다.</strong>
+  스티커 규격은 하나로 고정하지 않고 <strong>파우치에 맞춥니다.</strong>
+  대신 아래 요소는 규격과 무관하게 <strong>모든 스티커에서 동일</strong>해야 합니다.</p>
+  <ul>
+    <li>제품명 — 번트오렌지, 좌측 상단, 스티커 폭 대비 최대</li>
+    <li><code>푸드프롬</code> — 우측 상단</li>
+    <li>알레르기 박스 — 번트오렌지 테두리</li>
+    <li>영양정보 — 하단 가로 표</li>
+    <li>고객상담실 — <code>070-8814-5892</code></li>
+  </ul>
 
-  <h4>갭 — 편육</h4>
-  <p>편육 스티커는 <strong>흑백 영양정보 표기뿐</strong>이고 <code>푸드프롬</code> 표기조차 없습니다.
-  투명 진공포장이라 무지 파우치보다 오히려 배경이 좋은데, 브랜드가 전혀 실리지 않은 상태입니다.</p>
-  <p class="note"><strong>우선 조치</strong> — 편육 스티커에 최소한 <code>푸드프롬</code> 워드마크와 제품명을 넣습니다.
-  투명 배경을 살리려면 아이보리 면을 깔지 말고 <strong>흰 글자 + 오렌지 포인트</strong>로 뺍니다.</p>
+  <h4>편육 — 가로형 <span style="color:var(--accent);font-size:12px">신규 시안</span></h4>
+  <div class="gal wide">
+    <figure><img src="brand/assets/sticker-pyeonyuk.png" alt="편육 스티커 신규 시안"><figcaption>편육 · 1227 × 357 — 진공 파우치 상단 띠</figcaption></figure>
+  </div>
+  <div class="spec">
+    <b>1227 × 357</b><b>비율 <em>3.44 : 1</em></b><b>가로형</b>
+  </div>
+  <p>이전 흑백 표기에서 개선되어 <strong>브랜드가 올라왔습니다.</strong></p>
+  <div class="tblwrap"><table>
+    <thead><tr><th>항목</th><th>상태</th></tr></thead>
+    <tbody>
+      <tr><td><code>푸드프롬</code> 워드마크</td><td><span class="ok">반영</span> — 중앙 우측</td></tr>
+      <tr><td>번트오렌지 적용</td><td><span class="ok">반영</span> — 영양정보 헤더 · 알레르기 박스</td></tr>
+      <tr><td>아이보리 배경</td><td><span class="ok">반영</span></td></tr>
+      <tr><td>표시사항 · 영양정보</td><td><span class="ok">반영</span> — 3단 구성</td></tr>
+      <tr><td>대형 제품명</td><td><span class="no">미반영</span> — <code>편육</code>이 표 안의 한 칸으로만 존재</td></tr>
+      <tr><td>조리예 이미지</td><td><span class="no">미반영</span></td></tr>
+    </tbody>
+  </table></div>
+  <p class="note"><strong>남은 과제</strong> — 현 시안은 <strong>표시사항 라벨</strong>이지 브랜드 면이 아닙니다.
+  냉동 파우치 스티커는 제품명이 시선을 먼저 잡는데, 편육은 표부터 읽힙니다.
+  가로형이라 공간이 빠듯하지만, <strong>좌측 끝에 세로 배치로 <code>편육</code>을 크게</strong> 넣는 방식을 검토합니다.</p>
 
   <h4>편지 컨셉의 무료 적용안</h4>
   <p><strong>인쇄비가 늘지 않는</strong> 범위 — 스티커 판만 수정하면 되는 항목입니다.</p>
