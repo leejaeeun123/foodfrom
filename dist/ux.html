@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UX Guidelines — FOODFROM Design System</title>
+<meta name="description" content="푸드프롬 온라인 구매 경험 — 채널별 규격, 상세페이지 구조, 썸네일, 편지 화법. 자사몰은 후순위.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1 class="brandline">FOODFROM<em>.</em></h1>
+    <p class="sub">Design System — 꾸미지 않은 제대로 고른 맛</p>
+  </div>
+</header>
+
+<nav class="tabs"><div class="wrap"><a href="index.html"><span class="gl">眼</span>BRAND</a><a href="bx.html"><span class="gl">言</span>BX</a><a href="product.html"><span class="gl">物</span>PRODUCT</a><a href="ux.html" aria-current="page"><span class="gl">手</span>UX</a></div></nav>
+
+<div class="wrap">
+  <div class="dlbar">
+    <a class="dl" href="docs/UX.md" download>↓ UX.md</a>
+    <a class="dl ghost" href="foodfrom-docs.zip" download>↓ 문서 전체 zip</a>
+    <span class="dlnote">手 어떻게 사는가</span>
+  </div>
+</div>
+
+<main>
+<section><div class="wrap">
+  <div class="sechead"><h2 style="font-size:32px">UX Guidelines</h2></div>
+  <p class="seclede" style="margin-left:0">푸드프롬을 어떻게 사는가. 지금 매출이 일어나는 곳은 <strong>6개 마켓플레이스</strong>이고, 자사몰은 먼 미래입니다. 이 문서는 마켓플레이스 운영(PART A)을 먼저 다루고, 자사몰(PART B)은 뼈대만 남겨둡니다.</p>
+</div></section>
+
+<nav class="toc"><div class="wrap"><ol><li><a href="#01-channels"><span class="n">01</span> Channels</a></li><li><a href="#02-detail-page"><span class="n">02</span> Detail Page</a></li><li><a href="#03-thumbnail"><span class="n">03</span> Thumbnail</a></li><li><a href="#04-letter-copy"><span class="n">04</span> Letter Copy</a></li><li><a href="#05-ux-principles"><span class="n">05</span> UX Principles</a></li><li><a href="#06-이후-섹션"><span class="n">06</span> 이후 섹션</a></li><li><a href="#-see-also"> See Also</a></li></ol></div></nav>
+
+<section><div class="wrap">
+<p>오프라인 매장이 없으므로 <strong>UX = 상세페이지 + 썸네일</strong>입니다. 사실상 매출에 가장 직접 닿는 문서입니다.</p>
+<hr />
+<h1>PART A · 마켓플레이스</h1>
+<h2 id="01-channels"><span class="num">01</span>Channels</h2>
+<h3>채널별 상세페이지 규격</h3>
+<div class="tblwrap"><table>
+<thead>
+<tr>
+<th>플랫폼</th>
+<th>상세페이지 폭</th>
+<th>이미지 구성</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>네이버 스마트스토어</td>
+<td><strong>860px</strong></td>
+<td>분할 업로드</td>
+</tr>
+<tr>
+<td>쿠팡</td>
+<td><strong>780px</strong></td>
+<td>분할 업로드</td>
+</tr>
+<tr>
+<td>11번가</td>
+<td>—</td>
+<td><strong>1장 합침</strong> + 공지사항 별도</td>
+</tr>
+<tr>
+<td>G마켓</td>
+<td>—</td>
+<td><strong>1장 합침</strong> + 공지사항 별도</td>
+</tr>
+<tr>
+<td>옥션</td>
+<td>—</td>
+<td>G마켓과 동일</td>
+</tr>
+<tr>
+<td>카카오 톡딜</td>
+<td>—</td>
+<td>미확인</td>
+</tr>
+</tbody>
+</table></div>
+<p><span class="badge ok">확정</span> 네이버·쿠팡은 폭이 다르므로 <strong>같은 디자인을 폭만 바꿔 두 벌</strong> 만듭니다. 11번가·G마켓·옥션은 한 장으로 합치고 공지사항을 분리합니다.</p>
+<h3>채널 주소</h3>
+<div class="tblwrap"><table>
+<thead>
+<tr>
+<th>채널</th>
+<th>주소</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>네이버 스마트스토어</td>
+<td>smartstore.naver.com/foodfrom</td>
+</tr>
+<tr>
+<td>쿠팡</td>
+<td>shop.coupang.com/A01620210</td>
+</tr>
+<tr>
+<td>11번가</td>
+<td>shop.11st.co.kr/stores/1229388</td>
+</tr>
+<tr>
+<td>G마켓</td>
+<td>minishop.gmarket.co.kr/foodfrom</td>
+</tr>
+<tr>
+<td>옥션</td>
+<td>stores.auction.co.kr/foodfrom</td>
+</tr>
+<tr>
+<td>카카오 톡딜</td>
+<td>store.kakao.com/foodfrom</td>
+</tr>
+</tbody>
+</table></div>
+<h3>채널 운영 원칙</h3>
+<div class="dd"><div class="do"><h5>Do</h5><ul><li>같은 제품은 모든 채널에서 같은 사진 · 같은 카피</li><li>플랫폼 규격만 바꾸고 내용은 동일하게</li></ul></div><div class="dont"><h5>Don't</h5><ul><li>채널별로 다른 제품명 쓰기 — 브랜드 검색이 흩어집니다</li><li>한 채널에만 최신 시안 반영하고 나머지 방치</li></ul></div></div>
+<h2 id="02-detail-page"><span class="num">02</span>Detail Page</h2>
+<h3>섹션 순서</h3>
+<p>상세페이지는 <strong>편지의 순서</strong>로 읽힙니다. 브랜드를 먼저 소개하고, 그다음 제품을 말합니다.</p>
+<div class="tblwrap"><table>
+<thead>
+<tr>
+<th>순서</th>
+<th>섹션</th>
+<th>목적</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>로고</td>
+<td>누가 보냈는지</td>
+</tr>
+<tr>
+<td>2</td>
+<td>브랜드 편지 문단</td>
+<td>신뢰도 확보 — 왜 이걸 골랐는지</td>
+</tr>
+<tr>
+<td>3</td>
+<td>제품 대표 컷</td>
+<td>무엇인지</td>
+</tr>
+<tr>
+<td>4</td>
+<td>제품 설명</td>
+<td>재료 · 출처 · 조리 시간 (담백한 톤)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>조리법</td>
+<td>어떻게 먹는지</td>
+</tr>
+<tr>
+<td>6</td>
+<td>구성 · 중량</td>
+<td>얼마나 오는지</td>
+</tr>
+<tr>
+<td>7</td>
+<td>표시사항 · 알레르기</td>
+<td>법정 고지</td>
+</tr>
+<tr>
+<td>8</td>
+<td>배송 · 공지사항</td>
+<td>아이스박스 + 아이스팩</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>2번이 핵심입니다.</strong> 음식 소개 전에 브랜드 설명 문단을 넣어 신뢰도를 먼저 확보합니다. 이 문단은 항상 <code>From. 푸드프롬</code> 으로 닫습니다.</p>
+</blockquote>
+<h3>규정</h3>
+<div class="dd"><div class="do"><h5>Do</h5><ul><li>브랜드 문단을 제품 설명보다 먼저</li><li>재료 출처와 조리 시간을 숫자로</li><li>아이보리 배경 · 번트오렌지는 점으로만</li></ul></div><div class="dont"><h5>Don't</h5><ul><li>상세페이지 전체를 오렌지로 덮기</li><li>브랜드 문단 없이 제품 사진부터 시작</li><li>두 톤(설명 / 재치)을 한 문단에 섞기</li></ul></div></div>
+<h2 id="03-thumbnail"><span class="num">03</span>Thumbnail</h2>
+<p>썸네일은 <strong>1장에서 브랜드가 식별되어야</strong> 합니다. 검색 결과에서 푸드프롬 제품끼리 한 줄로 보였을 때 같은 브랜드로 읽히는 것이 목표입니다.</p>
+<div class="tblwrap"><table>
+<thead>
+<tr>
+<th>요소</th>
+<th>규정</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>우표 타공 테두리</td>
+<td>이미지 외곽에 반원 반복</td>
+</tr>
+<tr>
+<td>소인 마크</td>
+<td>원형 배지 · 번트오렌지 1도</td>
+</tr>
+<tr>
+<td>제품명</td>
+<td>검색어 기준 표기</td>
+</tr>
+<tr>
+<td>배경</td>
+<td>아이보리 · 크라프트</td>
+</tr>
+</tbody>
+</table></div>
+<p><span class="badge ">개념만</span> 타공 지름·피치와 배지 지름이 <code>Brand.md</code> 04 에서 확정되어야 실제 적용이 가능합니다.</p>
+<div class="dd"><div class="do"><h5>Do</h5><ul><li>원물이 보이는 컷</li><li>자연광 · 그림자 살리기</li></ul></div><div class="dont"><h5>Don't</h5><ul><li>텍스트로 썸네일 덮기</li><li>플랫폼마다 다른 썸네일 쓰기</li><li>가짜 할인율 · 가짜 마감 표시</li></ul></div></div>
+<h2 id="04-letter-copy"><span class="num">04</span>Letter Copy</h2>
+<p>상세페이지 브랜드 문단을 쓰는 방법.</p>
+<h3>구조</h3>
+<pre><code>안부  →  고른 이유  →  발신인
+</code></pre>
+<h3>표본</h3>
+<blockquote><p>안녕하세요.</p><p>이 음식이 어떤 땅에서 자랐는지, 누가 어떻게 만들었는지<br>우리는 직접 보고 맛봤습니다.</p><p>확신한 것만 담아 보냅니다.</p><span class="from">From. 푸드프롬</span></blockquote>
+<h3>규정</h3>
+<ul>
+<li>1인칭은 <code>우리</code>, 2인칭은 <code>당신</code>. <strong><code>고객님</code> 금지</strong></li>
+<li>모든 문단의 마지막은 <code>From. 푸드프롬</code></li>
+<li>편지 은유를 <strong>문구로 설명하지 않습니다</strong> — &quot;편지처럼 보내드려요&quot; 금지</li>
+</ul>
+<p>자세한 어휘 규정은 <code>BX.md</code> 04 · 08 을 따릅니다. <span class="badge ok">확정</span></p>
+<hr />
+<h1>PART B · 자사몰</h1>
+<blockquote>
+<p><strong>후순위.</strong> 자사몰은 먼 미래이고, 지금은 마켓플레이스 운영이 먼저입니다.
+다만 <strong>원칙과 마이크로카피는 플랫폼과 무관</strong>하므로, 정해지는 대로 여기에 쌓아둡니다.</p>
+</blockquote>
+<h2 id="05-ux-principles"><span class="num">05</span>UX Principles</h2>
+<p>Nielsen 10 휴리스틱을 채택하고, 푸드프롬 고유 원칙을 추가합니다. <span class="badge wip">미작성</span></p>
+<h3>푸드프롬 고유 원칙 (후보)</h3>
+<div class="tblwrap"><table>
+<thead>
+<tr>
+<th>원칙</th>
+<th>뜻</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Show the Sender</strong></td>
+<td>누가 골랐는지가 항상 보이게. 익명 유통의 반대가 브랜드의 근거입니다</td>
+</tr>
+<tr>
+<td><strong>No Fake Urgency</strong></td>
+<td>가짜 품절임박 · 카운트다운 타이머 금지. &quot;꾸미지 않은&quot;의 UX 번역입니다</td>
+</tr>
+<tr>
+<td><strong>Say What You Know</strong></td>
+<td>모르는 것은 모른다고. 배송일이 불확실하면 불확실하다고 씁니다</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="06-이후-섹션"><span class="num">06</span>이후 섹션</h2>
+<ul class="todo"><li>Purchase Flow — 탐색 → 상세 → 장바구니 → 결제 → 배송조회</li><li>Forms — 주문서 · 배송지 · 검증 타이밍 · 스마트 기본값</li><li>Loading &amp; Feedback — 타이밍 기준 · 스켈레톤 vs 스피너</li><li>Microcopy — CTA · 빈 장바구니 · 품절 · 에러 (BX 05 와 연동)</li><li>Notifications — 주문 확인 · 배송 알림 · 재입고</li><li>Accessibility — 대비 · 키보드 · 스크린리더</li></ul>
+<h3>선행 결정</h3>
+<ul class="todo"><li>자사몰 플랫폼 결정 — 카페24 / 식스샵 / 자체 개발</li><li>구축 시점</li></ul>
+<h2 id="-see-also">See Also</h2>
+<ul>
+<li><code>BX.md</code> — 여기서 쓰는 화법과 어휘의 원본</li>
+<li><code>Brand.md</code> — 썸네일에 쓰는 그래픽 요소</li>
+<li><code>Product.md</code> — 상세페이지에 들어가는 제품 정보</li>
+</ul>
+
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="sig">From. 푸드프롬</div>
+  <p>이 페이지는 <code>docs/UX.md</code> 에서 자동 생성됩니다. HTML 을 직접 고치지 마세요.</p>
+  <p>2026-09-16 · PART A 우선</p>
+</div></footer>
+
+</body>
+</html>
